@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #191919;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+.back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 0 40px;
+}
+
+.logo {
+    color: #bdbdf7;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    font-weight: 600;
+    padding: 10px 30px;
+}
+
+
+.menu .navbar ul li a:hover {
+    color: #bdbdf7;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 25px;
+}
+
+.menu label { 
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    width: 100%;
+    text-align: center;
+}
+
+.header-txt h1 {
+    color: #fff;
+    font-size: 70px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.breathband {
+    font-size: 106px;
+    color: #bdbdf7;
+}
+
+.header-txt p {
+    font-size: 16px;
+    color: #d5d5d5;
+    padding: 0 200px;
+    margin-bottom: 25px;
+}
+
+#BreathBand .container {
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#BreathBand .container {
+    display: flex;
+    justify-content: center;
+}
+
+#BreathBand .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+}
+
+#BreathBand h2 {
+    margin-top: 0px;
+    color: #fff;
+    padding-bottom: 10px;
+    font-weight: 1000;
+    font-size: 45px;
+}
+
+#BreathBand .color-acento {
+    color: #bdbdf7;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+#BreathBand .img-container {
+    background-image: url("../sources/morado.png");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px; 
+}
+
+#BreathBand2 .container2 {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    padding: 30px 12px;
+    flex-direction: row-reverse;
+}
+
+#BreathBand2 .texto2 {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+}
+
+#BreathBand2 h2 {
+    margin-top: 0px;
+    color: #fff;
+    padding-bottom: 10px;
+    font-weight: 1000;
+    font-size: 45px;
+}
+
+#BreathBand2 .color-acento2 {
+    color: #bdbdf7;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+#BreathBand2 .img-container2 {
+    background-image: url("../sources/about2.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 480px; 
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #24272e;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+
+    .header {
+        padding: 40px 30px;
+    }
+
+    #texto {
+        font-size: 35px;
+    }
+
+    .breathband {
+        font-size: 45px;
+    }
+
+    .header-txt p {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #24272e;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        padding: 20px 15px; /* Reduce padding en la cabecera */
+    }
+
+    .header-txt h1 {
+        font-size: 45px; /* Disminuye el tamaño del título */
+        line-height: 50px;
+    }
+
+    .breathband {
+        font-size: 35px; /* Ajusta tamaño del texto "breathband" */
+    }
+
+    .header-txt p {
+        font-size: 14px; /* Reduce el tamaño del texto del párrafo */
+        padding: 0 20px; /* Reduce el padding lateral para más espacio */
+    }
+
+    /* Ajustes para el texto en #BreathBand y #BreathBand2 */
+    #BreathBand .texto,
+    #BreathBand2 .texto2 {
+        width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
+        padding-left: 10px; /* Reduce el padding izquierdo */
+    }
+
+    #BreathBand h2,
+    #BreathBand2 h2 {
+        font-size: 35px; /* Reduce el tamaño del encabezado */
+    }
+
+    #BreathBand .color-acento,
+    #BreathBand2 .color-acento2 {
+        font-size: 20px; /* Ajusta el tamaño de los textos destacados */
+    }
+
+    #BreathBand .img-container,
+    #BreathBand2 .img-container2 {
+        display: none; /* Oculta imágenes grandes en pantallas pequeñas */
+    }
+}

@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    margin: 0;
+}
+
+.container{
+    max-width: 2200px;
+    margin: auto;
+}
+
+.color-acento{color: green;}
+h1 {font-size: 3.53em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul{list-style: none;}
+li {font-size: 1.25em;}
+
+.tiposde{font-weight: bold;}
+
+header {
+    background-color: rgb(245, 245 ,245 );
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: green;
+    font-size: 2.5em;
+}
+
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+
+}
+
+header a:hover {
+    color: rgb(30, 134, 30);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/calm.jpg");
+    background-size: cover;
+
+}
+
+#hero h1 {
+    color: white;
+}
+
+/* 
+Contenido
+*/
+#Ansiedad .container {
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#Tipos .container {
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#Causas .container {
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#Respiracion .container {
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#Tecnologia .container {
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#BreathBand .container {
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#Sintomas .container {
+    text-align: center;
+    padding: 50px 12px;
+}
+
+@media (min-width: 720px) {
+    
+    header .logo {
+        
+        margin: 0;
+        padding: 15px 30px;
+        font-weight: bold;
+        color: green;
+        font-size: 2.5em;
+    }
+
+    header a {
+        padding: 40px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #000;
+        font-size: 1.5em;
+    
+    }
+
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #hero {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ) 
+        ,url(../media/calm.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    #Ansiedad .container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Ansiedad .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #Ansiedad h2 {
+        margin-top: 0px;
+    }
+    
+    #Ansiedad .img-container {
+        background-image: url("../media/ansiedadimg.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #Tipos .container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Tipos .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #Tipos h2 {
+        margin-top: 0px;
+    }
+    
+    #Tipos .img-container {
+        background-image: url("../media/terapia-ansiedad.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #Causas .container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Causas .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #Causas h2 {
+        margin-top: 0px;
+    }
+    
+    #Causas .img-container {
+        background-image: url("../media/ansiedad-generalizada.webp");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #Sintomas  .container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Sintomas  .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #Sintomas  h2 {
+        margin-top: 0px;
+    }
+    
+    #Sintomas .img-container {
+        background-image: url("../media/istockphoto.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #Respiracion  .container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Respiracion  .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #Respiracion  h2 {
+        margin-top: 0px;
+    }
+    
+    #Respiracion .img-container {
+        background-image: url("../media/respiracion-ajustado.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #Tecnologia  .container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Tecnologia  .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #Tecnologia  h2 {
+        margin-top: 0px;
+    }
+    
+    #Tecnologia .img-container {
+        background-image: url("../media/piedritas.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #BreathBand  .container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #BreathBand  .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #BreathBand  h2 {
+        margin-top: 0px;
+    }
+    
+    #BreathBand .img-container {
+        background-image: url("../media/normal2.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #nuestras-metas .metas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestras-metas h3 {
+        margin-top: 0;
+    }
+    
+    #nuestras-metas h2 {
+        font-size: 4em;
+    }
+    
+    #nuestras-metas p {
+        display: block;
+        margin-top: 30px;
+    }
+
+    #nuestras-metas .carta{
+        padding: 15px;
+    }
+}
